@@ -77,7 +77,7 @@ pipeline {
         stage('CODE ANALYSIS with SONARQUBE') {
             environment {
                 scannerHome = tool 'mysonarscanner4'
-                jdk = tool 'jdk-17' // Assuming you have defined 'jdk-17' in Jenkins tool configuration.
+                jdk = tool 'jdk-11' // Assuming you have defined 'jdk-17' in Jenkins tool configuration.
             }
 
             steps {
